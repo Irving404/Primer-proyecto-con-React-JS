@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Testimonio from'./componentes/Testimonio';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1> Mi primer aplicacion </h1>
+        <Testimonio 
+          imag='Frida'
+          nombre='Freida Kalo'
+          pais='Mexico'
+          cargo='Ingeniera de software'
+          empresa='Amazon'
+          texto='Yo soy Frida Kalo en estos momentos'/>
+        <Testimonio 
+          imag='irving2'
+          nombre='Irving Aldahir Benitez Hernandez'
+          pais='Mexico'
+          cargo='Ingeniera en Sistemas Inteligentes'
+          empresa='Meta'
+          texto='Yo soy Irving y me especializo en desarollo de sotfware e inteligencia artificial y vision por computadoras'/>
+      </div>
     </div>
   );
 }
